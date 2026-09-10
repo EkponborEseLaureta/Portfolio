@@ -321,6 +321,14 @@
     border-bottom:1px solid var(--line);
   }
 
+  /* ---------- SKILLS & TOOLS SIDE BY SIDE ---------- */
+  .skills-tools-grid{ display:grid; grid-template-columns:1.1fr 0.9fr; gap:48px; align-items:start; }
+  @media (max-width:900px){ .skills-tools-grid{grid-template-columns:1fr;} }
+  .skills-tools-grid .skills-grid{ grid-template-columns:1fr; gap:24px; margin-top:0; }
+  .skills-tools-grid .tool-grid{ grid-template-columns:repeat(2,1fr); margin-top:0; }
+  @media (max-width:560px){ .skills-tools-grid .tool-grid{grid-template-columns:repeat(2,1fr);} }
+  .subsec-title{ font-family:'Space Grotesk', sans-serif; font-weight:600; font-size:1.05rem; margin-bottom:4px; }
+
   /* ---------- EDUCATION ---------- */
   .edu-row{ display:grid; grid-template-columns:1fr auto; gap:20px; padding:20px 0; border-top:1px solid var(--line); align-items:baseline;}
   .edu-row:last-child{border-bottom:1px solid var(--line);}
@@ -378,7 +386,7 @@
     <div class="role-line">Registered Nurse &amp; Midwife | Medical Virtual Assistant | Telehealth Nurse | Health Communication | Nursing Research</div>
 
     <div class="locrow">
-      <span>Based in Lagos, Nigeria</span>
+      <span>Based in Nigeria</span>
       <span>English: IELTS Academic 8.0</span>
     </div>
     <div class="cta-row">
@@ -632,57 +640,57 @@
 <section id="skills">
   <div class="wrap">
     <div class="sec-head">
-      <h2>Skills</h2>
+      <h2>Skills &amp; Tools</h2>
     </div>
-    <div class="skills-grid">
-      <div class="skill-col">
-        <div class="skill-col-title">Core Nursing Skills</div>
-        <ul>
-          <li>Comprehensive patient assessment, medication administration, and holistic nursing care</li>
-          <li>Clinical documentation, infection prevention, and evidence-based decision making</li>
-          <li>Patient education, counseling, and health promotion</li>
-          <li>Interdisciplinary collaboration, time management, and prioritization</li>
-          <li>Community health engagement and quality improvement</li>
-          <li>Problem solving in high pressure environments</li>
-        </ul>
+    <div class="skills-tools-grid">
+      <div>
+        <div class="subsec-title">Skills</div>
+        <div class="skills-grid">
+          <div class="skill-col">
+            <div class="skill-col-title">Core Nursing Skills</div>
+            <ul>
+              <li>Comprehensive patient assessment, medication administration, and holistic nursing care</li>
+              <li>Clinical documentation, infection prevention, and evidence-based decision making</li>
+              <li>Patient education, counseling, and health promotion</li>
+              <li>Interdisciplinary collaboration, time management, and prioritization</li>
+              <li>Community health engagement and quality improvement</li>
+              <li>Problem solving in high pressure environments</li>
+            </ul>
+          </div>
+          <div class="skill-col">
+            <div class="skill-col-title">Digital Skills</div>
+            <ul>
+              <li>Microsoft Office Suite, Google Workspace, and EHR management</li>
+              <li>AI-assisted research, writing, and productivity tools</li>
+              <li>Digital documentation, data entry, and basic data analysis</li>
+              <li>Virtual communication and cloud-based collaboration</li>
+              <li>Covidence (systematic review support)</li>
+              <li>Research and academic communication</li>
+            </ul>
+          </div>
+        </div>
       </div>
-      <div class="skill-col">
-        <div class="skill-col-title">Digital Skills</div>
-        <ul>
-          <li>Microsoft Office Suite, Google Workspace, and EHR management</li>
-          <li>AI-assisted research, writing, and productivity tools</li>
-          <li>Digital documentation, data entry, and basic data analysis</li>
-          <li>Virtual communication and cloud-based collaboration</li>
-          <li>Covidence (systematic review support)</li>
-          <li>Research and academic communication</li>
-        </ul>
+      <div>
+        <div class="subsec-title">Tools &amp; Platforms</div>
+        <div class="tool-grid">
+          <div class="tool-tile"><span class="tool-icon">🗂️</span><span>TherapyNotes</span></div>
+          <div class="tool-tile"><span class="tool-icon">📋</span><span>Simple Practice</span></div>
+          <div class="tool-tile"><span class="tool-icon">📊</span><span>Excel</span></div>
+          <div class="tool-tile"><span class="tool-icon">🧮</span><span>Google Sheets</span></div>
+          <div class="tool-tile"><span class="tool-icon">💬</span><span>WhatsApp Business API</span></div>
+          <div class="tool-tile"><span class="tool-icon">🖥️</span><span>Microsoft Office</span></div>
+          <div class="tool-tile"><span class="tool-icon">☁️</span><span>Google Workspace</span></div>
+          <div class="tool-tile"><span class="tool-icon">🎥</span><span>Zoom</span></div>
+          <div class="tool-tile"><span class="tool-icon">👥</span><span>Microsoft Teams</span></div>
+          <div class="tool-tile"><span class="tool-icon">💼</span><span>Slack</span></div>
+          <div class="tool-tile"><span class="tool-icon">🗓️</span><span>Monday.com</span></div>
+          <div class="tool-tile"><span class="tool-icon">🤖</span><span>Respond AI</span></div>
+          <div class="tool-tile"><span class="tool-icon">☎️</span><span>RingCentral</span></div>
+          <div class="tool-tile"><span class="tool-icon">🔎</span><span>Covidence</span></div>
+          <div class="tool-tile"><span class="tool-icon">🩺</span><span>DrChrono</span></div>
+          <div class="tool-tile"><span class="tool-icon">🏥</span><span>Epic</span></div>
+        </div>
       </div>
-    </div>
-  </div>
-</section>
-
-<section id="tools">
-  <div class="wrap">
-    <div class="sec-head">
-      <h2>Tools &amp; Platforms</h2>
-    </div>
-    <div class="tool-grid">
-      <div class="tool-tile"><span class="tool-icon">🗂️</span><span>TherapyNotes</span></div>
-      <div class="tool-tile"><span class="tool-icon">📋</span><span>Simple Practice</span></div>
-      <div class="tool-tile"><span class="tool-icon">📊</span><span>Excel</span></div>
-      <div class="tool-tile"><span class="tool-icon">🧮</span><span>Google Sheets</span></div>
-      <div class="tool-tile"><span class="tool-icon">💬</span><span>WhatsApp Business API</span></div>
-      <div class="tool-tile"><span class="tool-icon">🖥️</span><span>Microsoft Office</span></div>
-      <div class="tool-tile"><span class="tool-icon">☁️</span><span>Google Workspace</span></div>
-      <div class="tool-tile"><span class="tool-icon">🎥</span><span>Zoom</span></div>
-      <div class="tool-tile"><span class="tool-icon">👥</span><span>Microsoft Teams</span></div>
-      <div class="tool-tile"><span class="tool-icon">💼</span><span>Slack</span></div>
-      <div class="tool-tile"><span class="tool-icon">🗓️</span><span>Monday.com</span></div>
-      <div class="tool-tile"><span class="tool-icon">🤖</span><span>Respond AI</span></div>
-      <div class="tool-tile"><span class="tool-icon">☎️</span><span>RingCentral</span></div>
-      <div class="tool-tile"><span class="tool-icon">🔎</span><span>Covidence</span></div>
-      <div class="tool-tile"><span class="tool-icon">🩺</span><span>DrChrono</span></div>
-      <div class="tool-tile"><span class="tool-icon">🏥</span><span>Epic</span></div>
     </div>
   </div>
 </section>
@@ -891,7 +899,7 @@
     </div>
     <div class="foot-bottom">
       <span>Ese Laureta Ekponbor, Registered Nurse and Midwife</span>
-      <span>Lagos, Nigeria</span>
+      <span>Nigeria</span>
     </div>
   </div>
 </footer>
